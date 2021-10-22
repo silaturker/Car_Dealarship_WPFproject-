@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfApp1.FirstWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:control="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="FirstWindow" Height="766" Width="1366">
+    <Grid Margin="0,0,0,-2" RenderTransformOrigin="0.632,0.946">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="837*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="481*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Image Source="wp1837720.jpg" Stretch="Fill"  Grid.ColumnSpan="3" Opacity="0.8"/>
+
+
+
+        <ListBox x:Name="List_Box" HorizontalAlignment="Left" Height="717" Margin="10,10,0,0" VerticalAlignment="Top" Width="404">
+            <CheckBox x:Name="Clio1" Width="394" Height="226" Checked="Clio1_Checked">
+                <Image x:Name="Clio" Source="carpixel.net-2019-renault-clio-88520-wide.jpg" Stretch="Fill"/>
+            </CheckBox>
+            <CheckBox x:Name="Megane1" Width="394" Height="222" Checked="Megane1_Checked">
+                <Image x:Name="Megane" Source="auto-magazin-srbija-2018-renault-megane-rs-trophy-2-680x365.jpg" Stretch="Fill"/>
+            </CheckBox>
+            <CheckBox x:Name="Talisman1" Width="394" Height="229" Checked="Talisman1_Checked">
+                <Image x:Name="Talisman" Source="wp6923846.jpg" Stretch="Fill"/>
+            </CheckBox>
+        </ListBox>
+        <Button x:Name="Back_Menu1" Content="Back to Menu" HorizontalAlignment="Left" Margin="270,673,0,0" VerticalAlignment="Top" Height="35" Background="#FF871614" FontSize="16" FontWeight="Bold" Opacity="0.79" Grid.Column="2" Width="140" Click="Back_Menu1_Click_1"/>
+        <Button x:Name="Visit_WebPage" Content="Visit Our Web Page" HorizontalAlignment="Left" Margin="94,673,0,0" VerticalAlignment="Top" Height="35" Background="#FF871614" FontWeight="Bold" Opacity="0.79" FontSize="14" Grid.Column="2" Width="140" Click="Visit_WebPage_Click_1"/>
+        <Button x:Name="Result" Content="Calculate Price" HorizontalAlignment="Left" Margin="484,673,0,0" VerticalAlignment="Top" Height="35" Background="#FF871614" FontSize="16" FontWeight="Bold" Opacity="0.79" RenderTransformOrigin="0.5,0.5" Width="140" Click="Result_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.494"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.491"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ListBox x:Name="model_listbox" HorizontalAlignment="Left" Height="252" Margin="513,30,0,0" VerticalAlignment="Top" Width="275">
+            <CheckBox x:Name="joy" Content="Joy" Height="99" Width="265" Checked="joy_Checked"/>
+            <CheckBox x:Name="touch" Content="Touch" Height="99" Width="265" Checked="touch_Checked"/>
+            <CheckBox x:Name="icon" Content="Icon" Height="99" Width="265" Checked="icon_Checked"/>
+        </ListBox>
+        <ListBox x:Name="opsion_list" HorizontalAlignment="Left" Height="592" Margin="117,30,0,0" VerticalAlignment="Top" Width="316" Grid.Column="2">
+            <CheckBox x:Name="wheel" Content="Wheel Pack &#xA;(Tinted Rear Windows + 17 '' Aluminum Wheel)" Height="78" Width="306"  FontWeight="Bold" Checked="wheel_Checked"/>
+            <CheckBox x:Name="park" Content="Parking Assistant Package (Electrochrome Rear View Mirror + Front Rear Parking Sensor + Reverse&#xA;Vision Camera)" Height="78" Width="306"  FontWeight="Bold" Checked="park_Checked"/>
+            <CheckBox x:Name="metallic" Content="Metallic Color" Height="78" Width="306"  FontWeight="Bold" Checked="metallic_Checked"/>
+            <CheckBox x:Name="_fixed" Content="Fixed Glass Ceiling " Height="78" Width="306"  FontWeight="Bold" Checked="_fixed_Checked"/>
+            <CheckBox x:Name="rlink" Content="Renault R-link Package" Height="78" Width="306"  FontWeight="Bold" Checked="rlink_Checked"/>
+            <CheckBox x:Name="gloss" Content="Gloss Black Side Mirrors" Height="78" Width="306"  FontWeight="Bold" Checked="gloss_Checked"/>
+            <CheckBox x:Name="shock" Content="Electronic Shock Absorber:" Height="78" Width="306"  FontWeight="Bold" Checked="shock_Checked"/>
+            <CheckBox x:Name="_4control" Content="4 Control:" Height="78" Width="306"  FontWeight="Bold" Checked="_4control_Checked"/>
+            <CheckBox x:Name="cruise" Content="Adaptif Cruise Control:" Height="78" Width="306"  FontWeight="Bold" Checked="cruise_Checked"/>
+            <CheckBox x:Name="panoramic" Content="Electrically Opening Panoramic Glass Roof:" Height="78" Width="306"  FontWeight="Bold" Checked="panoramic_Checked"/>
+        </ListBox>
+        <ListBox x:Name="gearbox_list" HorizontalAlignment="Left" Height="249" Margin="513,373,0,0" VerticalAlignment="Top" Width="275">
+            <CheckBox x:Name="gearbox_1" Content="gasoline + manual " Height="60" Width="265" Checked="gearbox_1_Checked"/>
+            <CheckBox x:Name="gearbox_2" Content="gasoline + automatic " Height="60" Width="265" Checked="gearbox_2_Checked"/>
+            <CheckBox x:Name="gearbox_3" Content=" diesel + manual " Height="60" Width="265" Checked="gearbox_3_Checked"/>
+            <CheckBox x:Name="gearbox_4" Content="diesel + automatic" Height="60" Width="265" Checked="gearbox_4_Checked"/>
+        </ListBox>
+
+        <TextBox x:Name="Result_Text" HorizontalAlignment="Left" Height="35" Margin="662,673,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+    </Grid>
+</Window>
